@@ -5,6 +5,7 @@
     <classes>
       <class name="saucelabs.LogintoApplication">
         <methods>
+          <include name="teardown"/>
           <include name="logintosauce"/>
         </methods>
       </class> <!-- saucelabs.LogintoApplication -->

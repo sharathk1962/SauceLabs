@@ -33,7 +33,11 @@
   </plugins>
   </build>
 
+
+
   <dependencies>
+
+  
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -48,6 +52,11 @@
     <version>7.3.0</version>
     <scope>test</scope>
 </dependency>
-
+<dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>4.0.0</version>
+            <scope>test</scope>
+        </dependency>
   </dependencies>
 </project>

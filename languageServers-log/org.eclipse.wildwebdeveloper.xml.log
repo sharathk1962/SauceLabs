@@ -845,3 +845,35 @@ LSP4E to org.eclipse.wildwebdeveloper.xml:Content-Length: 643
 
 
 LSP4E to org.eclipse.wildwebdeveloper.xml:{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///E:/GITpractice/HybridSauceLabs/testng.xml"},"text":"\u003c?xml version\u003d\"1.0\" encoding\u003d\"UTF-8\"?\u003e\r\n\u003c!DOCTYPE suite SYSTEM \"https://testng.org/testng-1.0.dtd\"\u003e\r\n\u003csuite name\u003d\"Suite\" parallel\u003d\"tests\"\u003e\r\n\t\u003ctest thread-count\u003d\"5\" name\u003d\"ChromeTest\"\u003e\r\n\t\t\u003cclasses\u003e\r\n\t\t\t\u003cclass name\u003d\"saucelabs.LogintoApplication\" /\u003e\r\n\t\t\u003c/classes\u003e\r\n\t\u003c/test\u003e \u003c!-- Test --\u003e\r\n\u003c/suite\u003e \u003c!-- Suite --\u003e\r\n"}}
+LSP4E to org.eclipse.wildwebdeveloper.xml:Content-Length: 61
+
+
+LSP4E to org.eclipse.wildwebdeveloper.xml:{"jsonrpc":"2.0","id":"18","method":"shutdown","params":null}
+LSP4E to org.eclipse.wildwebdeveloper.xml:Content-Length: 61
+
+
+LSP4E to org.eclipse.wildwebdeveloper.xml:{"jsonrpc":"2.0","id":"19","method":"shutdown","params":null}
+LSP4E to org.eclipse.wildwebdeveloper.xml:Content-Length: 697
+
+
+LSP4E to org.eclipse.wildwebdeveloper.xml:{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":14580,"rootPath":"/E:/GITpractice/HybridSauceLabs/","rootUri":"file:///E:/GITpractice/HybridSauceLabs/","capabilities":{"workspace":{"applyEdit":true,"symbol":{},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true},"textDocument":{"synchronization":{"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"completionItem":{"snippetSupport":true}},"hover":{},"signatureHelp":{},"references":{},"documentHighlight":{},"documentSymbol":{},"formatting":{},"rangeFormatting":{},"definition":{},"codeAction":{},"codeLens":{},"documentLink":{},"rename":{}}},"clientName":"Eclipse IDE","trace":"off"}}
+LSP4E to org.eclipse.wildwebdeveloper.xml:Content-Length: 60
+
+
+LSP4E to org.eclipse.wildwebdeveloper.xml:{"jsonrpc":"2.0","id":"2","method":"shutdown","params":null}
+org.eclipse.wildwebdeveloper.xml to LSP4E:{"jsonrpc":"2.0","id":"1","result":{"capabilities":{"textDocumentSync":1,"hoverProvider":true,"completionProvider":{"resolveProvider":false,"triggerCharacters":[".",":","\u003c","\"","\u003d","/","\\","?","\u0027"]},"definitionProvider":true,"documentHighlightProvider":true,"documentSymbolProvider":true,"codeActionProvider":true,"documentFormattingProvider":true,"documentRangeFormattingProvider":true,"renameProvider":true,"documentLinkProvider":{"resolveProvider":true},"foldingRangeProvider":true}}}
+org.eclipse.wildwebdeveloper.xml to LSP4E:{"jsonrpc":"2.0","id":"2","result":{}}
+LSP4E to org.eclipse.wildwebdeveloper.xml:Content-Length: 697
+
+
+LSP4E to org.eclipse.wildwebdeveloper.xml:{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":14580,"rootPath":"/E:/GITpractice/HybridSauceLabs/","rootUri":"file:///E:/GITpractice/HybridSauceLabs/","capabilities":{"workspace":{"applyEdit":true,"symbol":{},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true},"textDocument":{"synchronization":{"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"completionItem":{"snippetSupport":true}},"hover":{},"signatureHelp":{},"references":{},"documentHighlight":{},"documentSymbol":{},"formatting":{},"rangeFormatting":{},"definition":{},"codeAction":{},"codeLens":{},"documentLink":{},"rename":{}}},"clientName":"Eclipse IDE","trace":"off"}}
+org.eclipse.wildwebdeveloper.xml to LSP4E:{"jsonrpc":"2.0","id":"1","result":{"capabilities":{"textDocumentSync":1,"hoverProvider":true,"completionProvider":{"resolveProvider":false,"triggerCharacters":[".",":","\u003c","\"","\u003d","/","\\","?","\u0027"]},"definitionProvider":true,"documentHighlightProvider":true,"documentSymbolProvider":true,"codeActionProvider":true,"documentFormattingProvider":true,"documentRangeFormattingProvider":true,"renameProvider":true,"documentLinkProvider":{"resolveProvider":true},"foldingRangeProvider":true}}}
+LSP4E to org.eclipse.wildwebdeveloper.xml:Content-Length: 52
+
+
+LSP4E to org.eclipse.wildwebdeveloper.xml:{"jsonrpc":"2.0","method":"initialized","params":{}}
+LSP4E to org.eclipse.wildwebdeveloper.xml:Content-Length: 674
+
+
+LSP4E to org.eclipse.wildwebdeveloper.xml:{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///E:/GITpractice/HybridSauceLabs/testng.xml","languageId":"xml","version":1,"text":"\u003c?xml version\u003d\"1.0\" encoding\u003d\"UTF-8\"?\u003e\r\n\u003c!DOCTYPE suite SYSTEM \"https://testng.org/testng-1.0.dtd\"\u003e\r\n\u003csuite name\u003d\"Suite\" parallel\u003d\"tests\"\u003e\r\n\t\u003ctest thread-count\u003d\"5\" name\u003d\"ChromeTest\"\u003e\r\n\t\t\u003cclasses\u003e\r\n\t\t\t\u003cclass name\u003d\"saucelabs.LogintoApplication\" /\u003e\r\n\t\t\u003c/classes\u003e\r\n\t\u003c/test\u003e \u003c!-- Test --\u003e\r\n\u003c/suite\u003e \u003c!-- Suite --\u003e\r\n"}}}
+org.eclipse.wildwebdeveloper.xml to LSP4E:{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///E:/GITpractice/HybridSauceLabs/testng.xml","diagnostics":[]}}

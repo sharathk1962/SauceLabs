@@ -1,5 +1,8 @@
 package saucelabs;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -8,6 +11,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
@@ -17,6 +22,7 @@ import org.testng.annotations.Test;
 import com.beust.jcommander.Parameter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageobjects.Homepage;
 import pageobjects.LoginPage;
 import resources.BaseGeneric;
 
@@ -33,12 +39,18 @@ public class LogintoApplication extends BaseGeneric {
 		lp.clickonlogin().click();
 
 		//to get username password from webpage
-//		List<WebElement> names = driver.findElements(By.xpath("//div[@id='login_credentials']"));
-//		for(int i=0;i<names.size();i++) {
-//			String usernames=names.get(i).getText();
-//			System.out.println("user index " +i+ " names are" +names.get(i).getText());
-//		} 
+		//		List<WebElement> names = driver.findElements(By.xpath("//div[@id='login_credentials']"));
+		//		for(int i=0;i<names.size();i++) {
+		//			String usernames=names.get(i).getText();
+		//			System.out.println("user index " +i+ " names are" +names.get(i).getText());
+		//		} 
+	}
 
+	@Test
+	public void verifylogin() {
+		Homepage hp=new Homepage(driver);
+		String actual=	hp.homepagevalidation().getText();
+		Assert.assertEquals(actual,"Products");
 
 	}
 
@@ -63,10 +75,10 @@ public class LogintoApplication extends BaseGeneric {
 		return object;
 	}
 
-	@AfterTest
-	public void teardown()
-	{
-		driver.quit();
-	}
+//	@AfterTest
+//	public void teardown()
+//	{
+//		driver.quit();
+//	}
 
 }

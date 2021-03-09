@@ -3,7 +3,8 @@
 <suite name="Suite" parallel="tests">
 	<test thread-count="5" name="ChromeTest">
 		<classes>
-			<class name="saucelabs.LogintoApplication" />
+			<class name="saucelabs.LogintoApplication" />  
+			<class name="saucelabs.AddingItemstoCart" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

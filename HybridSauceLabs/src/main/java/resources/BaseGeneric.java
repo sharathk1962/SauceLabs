@@ -25,6 +25,7 @@ public class BaseGeneric {
 					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
 					driver=new ChromeDriver();
 					driver.get(urlvalue);
+					driver.manage().window().maximize();
 					
 				}
 				
@@ -33,6 +34,8 @@ public class BaseGeneric {
 					System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
 					driver=new FirefoxDriver();
 					driver.get(urlvalue);
+					driver.manage().window().maximize();
+
 					
 				}
 				return driver;			

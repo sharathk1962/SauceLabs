@@ -1,25 +1,11 @@
 package saucelabs;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
-import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.Reporter;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.beust.jcommander.Parameter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageobjects.Homepage;
@@ -27,12 +13,15 @@ import pageobjects.LoginPage;
 import resources.BaseGeneric;
 
 public class LogintoApplication extends BaseGeneric {
+	
+	@BeforeTest
+	public void launchbrowser() throws IOException {
+		driver=initialisedriver();
+	}
 
 	@Test(dataProvider="getusernamepassword")
 	public void logintosauce(String username, String Pasword) throws IOException
 	{
-
-		driver=initialisedriver();
 		LoginPage lp=new LoginPage(driver);
 		lp.enterusername().sendKeys(username);
 		lp.enterpassword().sendKeys(Pasword);

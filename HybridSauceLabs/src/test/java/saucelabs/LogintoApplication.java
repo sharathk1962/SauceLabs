@@ -45,7 +45,7 @@ public class LogintoApplication extends BaseGeneric {
 		Homepage hp=new Homepage(driver);
 		String actual=	hp.homepagevalidation().getText();
 		Assert.assertEquals(actual,"Products");
-
+		log.info("I am on the home page of the saucedemo website" );
 	}
 
 	@Test(enabled=false)

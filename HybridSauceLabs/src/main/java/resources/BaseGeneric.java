@@ -3,6 +3,7 @@ package resources;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,6 +39,7 @@ public class BaseGeneric {
 
 					
 				}
+			//	driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
 				return driver;			
 		
 	}

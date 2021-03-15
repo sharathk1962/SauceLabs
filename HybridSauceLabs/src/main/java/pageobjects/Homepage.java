@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import resources.BaseGeneric;
 
@@ -34,7 +35,13 @@ public class Homepage  {
 	@FindBy(tagName="svg")
 	WebElement cartitems;
 	
+	@FindBy(css="select.product_sort_container")
+	WebElement sortingproduct;
 
+	@FindBy(xpath="//div[@id='inventory_container']/div/div[1]/div[3]")
+	WebElement firstitemprice;
+	
+	
 	public WebElement homepagevalidation()
 	{
 		return productlabel;
@@ -42,6 +49,7 @@ public class Homepage  {
 	
 	public WebElement addbike_light()
 	{
+	//	driver.get(driver.getCurrentUrl());
 		return Bike_Light;
 	}
 	
@@ -64,5 +72,27 @@ public class Homepage  {
 	{
 		return cartitems;
 	}
+	
+	public WebElement sortproduct()
+	{
+		Select s=new Select(sortingproduct);
+		s.selectByValue("lohi");
+		return sortingproduct;
+	}
+	
+	public WebElement sorttooriginal()
+	{
+		Select s=new Select(sortingproduct);
+		s.selectByValue("az");
+	//	s.selectByVisibleText("Name (A to Z)");
+		return sortingproduct;
+	}
+	
+	public WebElement firstprice()
+	{
+		//String price=seconditemprice.getText();
+		return firstitemprice;
+	}
+
 
 }

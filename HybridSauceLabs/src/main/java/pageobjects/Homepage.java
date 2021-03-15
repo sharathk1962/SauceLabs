@@ -28,6 +28,12 @@ public class Homepage  {
 	@FindBy(xpath="//div[@id='inventory_container']/div/div[6]/div[3]/button")
 	WebElement all_Things;
 	
+	@FindBy(css="span.fa-layers-counter.shopping_cart_badge")
+	WebElement noofitems;
+	
+	@FindBy(tagName="svg")
+	WebElement cartitems;
+	
 
 	public WebElement homepagevalidation()
 	{
@@ -48,4 +54,15 @@ public class Homepage  {
 	{
 		return all_Things;
 	}
+	
+	public WebElement cartnoofitem()
+	{
+		return noofitems;
+	}
+	
+	public WebElement cartbutton()
+	{
+		return cartitems;
+	}
+
 }

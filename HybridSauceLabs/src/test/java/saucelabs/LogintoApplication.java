@@ -1,6 +1,8 @@
 package saucelabs;
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -14,6 +16,8 @@ import resources.BaseGeneric;
 
 public class LogintoApplication extends BaseGeneric {
 	
+	public static Logger log=LogManager.getLogger(LogintoApplication.class.getName());
+
 	@BeforeTest
 	public void launchbrowser() throws IOException {
 		driver=initialisedriver();
@@ -26,6 +30,7 @@ public class LogintoApplication extends BaseGeneric {
 		lp.enterusername().sendKeys(username);
 		lp.enterpassword().sendKeys(Pasword);
 		lp.clickonlogin().click();
+		log.info("login to applictaion as " +username+ " succesfully" );
 
 		//to get username password from webpage
 		//		List<WebElement> names = driver.findElements(By.xpath("//div[@id='login_credentials']"));

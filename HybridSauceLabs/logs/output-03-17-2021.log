@@ -1,0 +1,9 @@
+00:09:23.908 [TestNG-tests-1] INFO  saucelabs.LogintoApplication - login to applictaion as standard_user succesfully
+00:09:24.047 [TestNG-tests-1] INFO  saucelabs.LogintoApplication - I am on the home page of the saucedemo website
+00:09:26.625 [TestNG-tests-1] INFO  saucelabs.AddingItemstoCart - all the 3 added succesfully to the cart
+00:11:52.379 [TestNG-tests-1] INFO  saucelabs.LogintoApplication - login to applictaion as standard_user succesfully
+00:11:52.706 [TestNG-tests-1] INFO  saucelabs.LogintoApplication - I am on the home page of the saucedemo website
+00:11:54.810 [TestNG-tests-1] INFO  saucelabs.AddingItemstoCart - all the 3 added succesfully to the cart
+00:13:27.213 [TestNG-tests-1] INFO  saucelabs.LogintoApplication - login to applictaion as standard_user succesfully
+00:13:27.539 [TestNG-tests-1] INFO  saucelabs.LogintoApplication - I am on the home page of the saucedemo website
+00:13:29.462 [TestNG-tests-1] INFO  saucelabs.AddingItemstoCart - all the 3 added succesfully to the cart

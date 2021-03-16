@@ -1,13 +1,20 @@
 package resources;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+import com.sun.media.jfxmedia.events.NewFrameEvent;
 
 public class BaseGeneric {
 	
@@ -43,6 +50,17 @@ public class BaseGeneric {
 				return driver;			
 		
 	}
+	
+	public String screenshot() throws IOException
+	{
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File src=ts.getScreenshotAs(OutputType.FILE);
+		String dest=System.getProperty("user.dir") + "\\screenshots\\1.png";
+		FileUtils.copyFile(src, new File(dest));
+		return dest;
+				
+	}
+
 	
 	
 }

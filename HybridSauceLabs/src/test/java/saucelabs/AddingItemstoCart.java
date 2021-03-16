@@ -1,13 +1,14 @@
 package saucelabs;
 
+import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import pageobjects.Homepage;
 import resources.BaseGeneric;
+import resources.ExtentReporter;
 
 public class AddingItemstoCart extends BaseGeneric{
 	
@@ -33,7 +34,7 @@ public class AddingItemstoCart extends BaseGeneric{
 	}
 	
 	@Test(priority=1)
-	public void sortingitems()
+	public void sortingitems() throws IOException
 	{
 	hp=new Homepage(driver);
 	hp.sortproduct().click();
@@ -43,6 +44,5 @@ public class AddingItemstoCart extends BaseGeneric{
 	System.out.println(s);
 	Assert.assertEquals(s,"$7.99");
 	hp.sorttooriginal().click(); 
-	
 	}
 }

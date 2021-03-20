@@ -73,10 +73,10 @@ public class LogintoApplication extends BaseGeneric {
 		return object;
 	}
 
-	@AfterTest
-	public void teardown()
-	{
-		driver.quit();
-	}
+//	@AfterTest
+//	public void teardown()
+//	{
+//		driver.quit();
+//	}
 
 }

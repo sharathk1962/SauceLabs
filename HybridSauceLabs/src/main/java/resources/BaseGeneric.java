@@ -3,12 +3,15 @@ package resources;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
@@ -26,10 +29,14 @@ public class BaseGeneric {
 				
 				if(browsername.equalsIgnoreCase("chrome"))
 				{
+				//	ChromeOptions ch=new ChromeOptions();
+				//	ch.addArguments("--headless");
+				//	ch.addArguments("window-size=1920,1080");
 					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
 					driver=new ChromeDriver();
 					driver.get(urlvalue);
 					driver.manage().window().maximize();
+			
 					
 				}
 				
@@ -51,7 +58,9 @@ public class BaseGeneric {
 	{
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File src=ts.getScreenshotAs(OutputType.FILE);
-		String dest=System.getProperty("user.dir") + "\\screenshots\\"+testcasename+".png";
+	//	String timestamp = new SimpleDateFormat("yyyy_MM_dd__hh_mm_ss").format(new Date());
+	//	String dest=System.getProperty("user.dir") + "\\screenshots\\" +testcasename + timestamp+".png";
+		String dest=System.getProperty("user.dir") + "\\screenshots\\" +testcasename+".png";
 		FileUtils.copyFile(src, new File(dest));
 		return dest;
 				

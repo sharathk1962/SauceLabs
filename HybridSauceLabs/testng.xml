@@ -4,12 +4,16 @@
 	<listeners>
 		<listener class-name="saucelabs.Listeners"></listener>
 	</listeners>
-	<test thread-count="5" name="ChromeTest">
+	<test thread-count="5" name="PlacingOrder">
 		<classes>
-			<class name="saucelabs.LogintoApplication" />
-			<class name="saucelabs.AddingItemstoCart" />
-			<class name="saucelabs.RemoveandCheckout" />
-
+			<class name="saucelabs.orderplaced.LogintoApplication" />
+			<class name="saucelabs.orderplaced.AddingItemstoCart" />
+			<class name="saucelabs.orderplaced.RemoveandCheckout" />
+				<class name="saucelabs.original.Register" />		
+	<!--	</classes></test>
+		<test thread-count="5" name="Sauceverification">
+		<classes>  -->
+			<class name="saucelabs.original.Register" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

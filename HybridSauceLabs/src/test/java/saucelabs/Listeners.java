@@ -27,7 +27,7 @@ public class Listeners extends BaseGeneric implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 	//	WebDriver driver =null;
-		extentTest.get().log(Status.FAIL, "Test Failed");
+	//	extentTest.get().log(Status.FAIL, "Test Failed");
 		extentTest.get().fail(result.getThrowable());
 		String testcasename=result.getMethod().getMethodName();
 		try {

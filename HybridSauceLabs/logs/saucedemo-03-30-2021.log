@@ -1,0 +1,8 @@
+23:38:58.362 [TestNG-tests-1] INFO  saucelabs.orderplaced.LogintoApplication - login to applictaion as standard_user succesfully
+23:38:58.707 [TestNG-tests-1] INFO  saucelabs.orderplaced.LogintoApplication - I am on the home page of the saucedemo website
+23:39:00.601 [TestNG-tests-2] INFO  saucelabs.orderplaced.LogintoApplication - login to applictaion as standard_user succesfully
+23:39:01.258 [TestNG-tests-2] INFO  saucelabs.orderplaced.LogintoApplication - I am on the home page of the saucedemo website
+23:40:29.266 [TestNG-tests-1] INFO  saucelabs.orderplaced.LogintoApplication - login to applictaion as standard_user succesfully
+23:40:29.468 [TestNG-tests-1] INFO  saucelabs.orderplaced.LogintoApplication - I am on the home page of the saucedemo website
+23:43:04.140 [TestNG-tests-1] INFO  saucelabs.orderplaced.LogintoApplication - login to applictaion as standard_user succesfully
+23:43:04.343 [TestNG-tests-1] INFO  saucelabs.orderplaced.LogintoApplication - I am on the home page of the saucedemo website

@@ -1,0 +1,8 @@
+00:24:47.515 [TestNG-tests-1] INFO  saucelabs.orderplaced.LogintoApplication - login to applictaion as standard_user succesfully
+00:24:49.267 [TestNG-tests-1] INFO  saucelabs.orderplaced.LogintoApplication - I am on the home page of the saucedemo website
+00:24:51.735 [TestNG-tests-1] INFO  saucelabs.orderplaced.AddingItemstoCart - all the 3 added succesfully to the cart
+00:24:52.046 [TestNG-tests-1] INFO  saucelabs.orderplaced.RemoveandCheckout - All thinsg Red Tshirt removed succesfully
+00:24:52.928 [TestNG-tests-1] DEBUG saucelabs.orderplaced.RemoveandCheckout - all the information filled and navigating to checkout page
+00:25:50.172 [TestNG-tests-1] INFO  saucelabs.orderplaced.LogintoApplication - login to applictaion as standard_user succesfully
+00:25:50.592 [TestNG-tests-1] INFO  saucelabs.orderplaced.LogintoApplication - I am on the home page of the saucedemo website
+00:25:52.451 [TestNG-tests-1] INFO  saucelabs.orderplaced.AddingItemstoCart - all the 3 added succesfully to the cart

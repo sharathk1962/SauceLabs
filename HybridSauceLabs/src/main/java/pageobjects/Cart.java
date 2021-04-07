@@ -15,7 +15,7 @@ public class Cart {
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(css="#cart_contents_container > div > div.cart_list > div:nth-child(5) > div.cart_item_label > div.item_pricebar > button")
-	WebElement Allredshirt;
+	private WebElement Allredshirt;
 	
 	@FindBy(css="a.btn_action.checkout_button")
 	WebElement checkout;

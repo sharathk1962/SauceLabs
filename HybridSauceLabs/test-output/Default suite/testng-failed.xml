@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="saucelabs.RemoveandCheckout">
+      <class name="saucelabs.original.Register">
         <methods>
-          <include name="removefromcart"/>
+          <include name="naigatetosauce"/>
+          <include name="launchbrowser"/>
         </methods>
-      </class> <!-- saucelabs.RemoveandCheckout -->
+      </class> <!-- saucelabs.original.Register -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

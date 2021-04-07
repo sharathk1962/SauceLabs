@@ -1,4 +1,4 @@
-package pageobjects;
+	package pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,6 +41,11 @@ public class Homepage  {
 	@FindBy(xpath="//div[@id='inventory_container']/div/div[1]/div[3]")
 	WebElement firstitemprice;
 	
+	@FindBy(css="#react-burger-menu-btn")
+	WebElement sidemenu;
+	
+	@FindBy(css="#about_sidebar_link")
+	WebElement about;
 	
 	public WebElement homepagevalidation()
 	{
@@ -92,6 +97,17 @@ public class Homepage  {
 	{
 		//String price=seconditemprice.getText();
 		return firstitemprice;
+	}
+	
+	public WebElement sidemenuoption()
+	{
+		return sidemenu;
+	}
+	
+	public WebElement aboutnavigate()
+	{
+		//String price=seconditemprice.getText();
+		return about;
 	}
 
 

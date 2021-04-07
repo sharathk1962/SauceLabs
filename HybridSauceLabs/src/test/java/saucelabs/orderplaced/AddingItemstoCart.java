@@ -1,8 +1,9 @@
-package saucelabs;
+package saucelabs.orderplaced;
 
 import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobjects.Homepage;
@@ -10,11 +11,14 @@ import resources.BaseGeneric;
 
 public class AddingItemstoCart extends BaseGeneric{
 	
+//	public WebDriver driver;
+	
 	public static Logger log=LogManager.getLogger(AddingItemstoCart.class.getName());
 	
 	Homepage hp;
 	
-	@Test(priority=2)
+	//@Test(priority=2)
+	@Test
 	public void addingitems() throws InterruptedException {
 		hp.addbike_light().click();
 		hp.addbolt_Tshirt().click();
@@ -31,7 +35,8 @@ public class AddingItemstoCart extends BaseGeneric{
 		hp.cartbutton().click();
 	}
 	
-	@Test(priority=1)
+//	@Test(priority=1)
+	@Test
 	public void sortingitems() throws IOException
 	{
 	hp=new Homepage(driver);
@@ -39,7 +44,6 @@ public class AddingItemstoCart extends BaseGeneric{
 	hp.sorttooriginal().click();   //because of this validation failed and purposely did
 	String p=hp.firstprice().getText();
 	String s=p.substring(0,5);
-	System.out.println(s);
 	Assert.assertEquals(s,"$7.99");
 	hp.sorttooriginal().click(); 
 	}

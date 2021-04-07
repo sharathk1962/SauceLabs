@@ -1,4 +1,4 @@
-package saucelabs;
+package saucelabs.orderplaced;
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
@@ -18,7 +18,7 @@ import resources.BaseGeneric;
 
 public class LogintoApplication extends BaseGeneric {
 	
-	public WebDriver driver;
+//	public WebDriver driver;
 	
 	public static Logger log=LogManager.getLogger(LogintoApplication.class.getName());
 
